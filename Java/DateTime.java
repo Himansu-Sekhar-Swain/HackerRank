@@ -1,7 +1,7 @@
 
 import java.time.LocalDate;
 
-class JavaDateTime {
+class DateTime {
 
     /*
      * Complete the 'findDay' function below.
