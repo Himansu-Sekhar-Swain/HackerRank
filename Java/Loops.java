@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class JavaLoops {
+class Loops {
     public int getNext(int x, int b) {
         int num = 1;
         if(x == 0) {
