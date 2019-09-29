@@ -9,9 +9,9 @@ import java.util.regex.*;
 public class Solution {
 
     private static final Scanner scanner = new Scanner(System.in);
-
+    
+    //print reverse
     public static void printReverse(int[] arr) {
-
         for(int x = 1; x <= arr.length; x++) {
             System.out.print(arr[arr.length - x]+" ");
         }
