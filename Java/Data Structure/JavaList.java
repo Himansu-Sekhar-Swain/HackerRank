@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Solution {
+public class JavaList {
 
     public static void main(String[] args) {
         String action_in = "Insert";
