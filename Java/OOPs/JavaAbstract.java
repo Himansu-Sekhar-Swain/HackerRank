@@ -4,8 +4,7 @@ abstract class Book{
 	abstract void setTitle(String s);
 	String getTitle(){
 		return title;
-	}
-	
+	}	
 }
 
 class MyBook extends Book {
@@ -20,7 +19,7 @@ class MyBook extends Book {
     }
 }
 
-public class Main{
+public class JavaAbstract {
 	
 	public static void main(String []args){
 		//Book new_novel=new Book(); This line prHMain.java:25: error: Book is abstract; cannot be instantiated
