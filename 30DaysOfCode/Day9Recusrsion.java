@@ -7,7 +7,9 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 public class Solution {
-
+    
+    private static final Scanner scanner = new Scanner(System.in);
+    
     // Complete the factorial function below.
     static int factorial(int n) {
         int factors = 1;
@@ -16,9 +18,7 @@ public class Solution {
         }
         return factors;
     }
-
-    private static final Scanner scanner = new Scanner(System.in);
-
+    
     public static void main(String[] args) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
