@@ -23,7 +23,7 @@ public class Person {
 	}
 
 	public void yearPasses() {
-	     	age += 1;
+		age += 1;
 	}
 
 	public static void main(String[] args) {
