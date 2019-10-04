@@ -9,6 +9,8 @@ import java.util.regex.*;
 public class Solution {
 
     private static final Scanner scanner = new Scanner(System.in);
+    
+    //Creates multiple table of a number 'n'
     private static void printMultiple(int n) {
         int counter = 10;
         for(int i = 1; i <= counter; i++) {
