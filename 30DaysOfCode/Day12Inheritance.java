@@ -31,13 +31,17 @@ class Student extends Person {
         super(firstName, lastName, id);
         this.testScores = scores;
     }
-
+    
+    //Sum all scores and find the avg.
     public char calculate() {
         int sum = 0;
+	    
         for(int score : testScores) {
             sum = sum + score;
         }
+	    
         int avg = Math.round(sum/testScores.length);
+	    
         if(avg >= 90 && avg <= 100) {
             return 'O';
         } else if(avg >= 80 && avg < 90) {
