@@ -2,7 +2,8 @@ import java.io.*;
 import java.util.*;
 
 public class Solution {
-
+    
+    //From a string 'input' divide odd and even string using substring
     private static void printInput(String input) {
         String evenString = ""; 
         String oddString = "";
