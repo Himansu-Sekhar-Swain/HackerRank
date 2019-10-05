@@ -14,6 +14,12 @@ public class Solution {
     */
     static int[] reverseArray(int[] a) {
         int[] reversed = new int[a.length];
+        //first way
+        for(int i = 0; i < a.length; i++) {
+            reversed[i] = a[a.length - (i+1)];
+        }
+        //second way
+        Collections.reverse(Arrays.asList(a));
         for(int i = 0; i < a.length; i++) {
             reversed[i] = a[a.length - (i+1)];
         }
