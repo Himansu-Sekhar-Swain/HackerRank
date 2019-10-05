@@ -15,7 +15,9 @@ public class Solution {
         Arrays.sort(a); //Do not break head...Just call 'Sort' method from Arrays class.
         scan.close();
 
-        // Prints each sequential element in array a
+        /**
+	* Prints each sequential element in array a
+	*/
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
         }
