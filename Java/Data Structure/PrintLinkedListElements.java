@@ -7,7 +7,10 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 public class Solution {
-
+    
+    /**
+     * This class was provided by Hackerrank
+     */
     static class SinglyLinkedListNode {
         public int data;
         public SinglyLinkedListNode next;
@@ -17,7 +20,10 @@ public class Solution {
             this.next = null;
         }
     }
-
+    
+    /**
+     * This class was provided by Hackerrank
+     */
     static class SinglyLinkedList {
         public SinglyLinkedListNode head;
         public SinglyLinkedListNode tail;
@@ -26,7 +32,10 @@ public class Solution {
             this.head = null;
             this.tail = null;
         }
-
+        
+    /**
+     * This class was provided by Hackerrank
+     */
         public void insertNode(int nodeData) {
             SinglyLinkedListNode node = new SinglyLinkedListNode(nodeData);
 
@@ -40,7 +49,9 @@ public class Solution {
         }
     }
 
-
+    /**
+     * Implemented method.
+     */
     static void printLinkedList(SinglyLinkedListNode head) {
 
         if(head == null) {
