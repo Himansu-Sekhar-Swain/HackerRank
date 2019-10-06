@@ -1,36 +1,38 @@
 import java.util.*;
 import java.security.*;
+
 interface Food {
-	 public String getType();
-	}
-	class Pizza implements Food {
+	public String getType();
+}
+
+class Pizza implements Food {
 	 public String getType() {
-	 return "Someone ordered a Fast Food!";
+	 	return "Someone ordered a Fast Food!";
 	 }
-	}
+}
 
-	class Cake implements Food {
+class Cake implements Food {
 
 	 public String getType() {
-	 return "Someone ordered a Dessert!";
+		 return "Someone ordered a Dessert!";
 	 }
-	}
-	class FoodFactory {
-		public Food getFood(String order) {
-            Food food = null;
-            if(order.equalsIgnoreCase("pizza")) {
-                food = new Pizza();                
-            } else {
-                food = new Cake();                
-            }   
-            return food;
+}
 
-}//End of getFood method
+class FoodFactory {
+	public Food getFood(String order) {
+		Food food = null;
+		if(order.equalsIgnoreCase("pizza")) {
+			food = new Pizza();                
+		} else {
+			food = new Cake();                
+		}   
+		return food;
 
-	}//End of factory class
+	}//End of getFood method
 
-	public class Solution {
+}//End of factory class
 
+public class Solution {
 	 public static void main(String args[]){
 			Do_Not_Terminate.forbidExit();
 
