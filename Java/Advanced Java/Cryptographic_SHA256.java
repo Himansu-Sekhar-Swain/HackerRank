@@ -14,7 +14,7 @@ public class Solution {
         byte[] bytes = md.digest(input.getBytes(StandardCharsets.UTF_8));
         BigInteger bigInt = new BigInteger(1, bytes);
         StringBuilder sb = new StringBuilder(bigInt.toString(16));
-        while(sb.length() < 32) {
+        while(sb.length() < 64) { //with 32 2 test cases failed.
             sb.insert(0, "0");
         }
         System.out.println(sb.toString());
