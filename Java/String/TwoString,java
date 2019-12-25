@@ -1,0 +1,25 @@
+package problem.solving;
+
+public class Two_Strings {
+	
+	public static void main(String[] args) {
+		
+		String s1 = "b";
+		String s2 = "bac";
+		
+		System.out.println("Share Substring ? : "+twoStrings(s1, s2));		
+	}
+	
+	static String twoStrings(String s1, String s2) {
+	
+		for(int x = 0; x < s1.length(); x++) {
+			
+			if(s2.contains(s1.charAt(x)+"")) {
+				return "YES";
+			}
+		}
+		
+		return "NO";
+
+    }
+}
