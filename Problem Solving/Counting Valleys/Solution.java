@@ -8,7 +8,7 @@ import java.util.regex.*;
 
 public class Solution {
 
-    // Complete the countingValleys function below.
+    // 1st Solution : Complete the countingValleys function below.
     static int countingValleys(int n, String s) {
 
         int sum = 0;
@@ -21,6 +21,31 @@ public class Solution {
             else sum--;
         }
         return count;
+    }
+    
+    //2nd Solution
+    static int countingValleys(int n, String s) {
+        int level = 0;
+        int valleys = 0;
+        boolean belowSea = false;
+        
+        for(int x = 0; x < n; x++) {
+            if(s.charAt(x) == 'U') {
+                level ++;
+            } else {
+                level --;
+            }
+            
+            if(!belowSea && level < 0) {
+                valleys ++;
+            }
+            
+            if(level >= 0) {
+                belowSea = false;
+                
+            }
+        }
+        return valleys;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
