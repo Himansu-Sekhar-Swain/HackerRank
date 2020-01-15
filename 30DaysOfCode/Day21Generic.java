@@ -14,6 +14,17 @@ class Printer <T> {
             System.out.println(o); //Auto Boxing [No Need to Handle Any Object Type Here]
         }
     }
+    
+    /**
+    * Another way. I am doubt over above method (Do not know why I wrote like that)
+    *
+    */
+    
+    public void printArray(Object[] arr) {
+        for(int x = 0; x < arr.length; x++) {
+            System.out.println(arr[x]);
+        }
+    }
 }
 
 public class Generics {
